@@ -1,7 +1,7 @@
 # 🎮 Tic Tac Toe Game  
 
 A simple **Tic Tac Toe** game built with **HTML, CSS, and JavaScript**. Two players can play against each other on the same device by taking turns marking **O** and **X**.  
-
+Live: https://sayan957.github.io/Tic-Tac-To/
 ---
 
 ## 🚀 Features  
