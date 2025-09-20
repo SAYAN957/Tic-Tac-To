@@ -40,7 +40,7 @@ A simple **Tic Tac Toe** game built with **HTML, CSS, and JavaScript**. Two play
 
 ## 🖼️ Screenshot
 
-
+![Tic Tac Toe Screenshot](Tic-tac-to.png)
 
 ---
 
