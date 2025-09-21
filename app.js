@@ -3,6 +3,8 @@ let resetbtn=document.querySelector("#reset-btn");
 let newbtn= document.querySelector("#new-btn");
 let msg= document.querySelector("#msg");
 let msgconatiner=document.querySelector(".msg-container");
+let player1Name = "Player 1";
+let player2Name = "Player 2";
 
 let turno=true;
 let count=0;
@@ -59,7 +61,8 @@ for (let pattern of winpattern ){
 }
 
 const showwiner = (winner) => {
-msg.innerText = `Congratulation winner is ${winner}`;
+let winnerName = (winner === "O") ? player1Name : player2Name;
+msg.innerText = `Congratulations 🎉 Winner is ${winnerName}`;
 msgconatiner.classList.remove("hide");
 disableboxes();
 }
@@ -78,3 +81,12 @@ for(let box of boxes){
 };
 newbtn.addEventListener("click", resetgame);
 resetbtn.addEventListener("click",resetgame);
+const overlay = document.getElementById("overlay");
+const playerForm = document.getElementById("player-form");
+
+playerForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  player1Name = document.getElementById("player1").value.trim() || "Player 1";
+  player2Name = document.getElementById("player2").value.trim() || "Player 2";
+  overlay.classList.add("hide-overlay");
+});
